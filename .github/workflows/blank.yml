@@ -28,19 +28,19 @@ jobs:
 
       # Restore dependencies
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./obj/Debug/net9.0
 
       # Build the project
       - name: Build project
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build ./obj/Debug/net9.0 --no-restore --configuration Release
 
       # Check code formatting 
       - name: Check formatting with dotnet-format
-        run: |
+        run: | 
           dotnet tool install -g dotnet-format
           dotnet format --verify-no-changes
         # shell: pwsh  # Important when using Windows runners
 
       # Run tests 
       - name: Run tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test ./obj/Debug/net9.0 --no-build --verbosity normal
