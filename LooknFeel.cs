@@ -14,7 +14,7 @@ namespace ProgPOE
         public void Audio()
         {
             SoundPlayer play = new SoundPlayer("./aud.wav");
-            play.Play();
+            play.PlaySync();
 
           
         }

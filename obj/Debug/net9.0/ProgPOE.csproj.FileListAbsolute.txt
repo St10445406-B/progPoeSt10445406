@@ -16,3 +16,4 @@ C:\Users\Bradz1\source\repos\ProgPOE\ProgPOE\obj\Debug\net9.0\refint\ProgPOE.dll
 C:\Users\Bradz1\source\repos\ProgPOE\ProgPOE\obj\Debug\net9.0\ProgPOE.pdb
 C:\Users\Bradz1\source\repos\ProgPOE\ProgPOE\obj\Debug\net9.0\ProgPOE.genruntimeconfig.cache
 C:\Users\Bradz1\source\repos\ProgPOE\ProgPOE\obj\Debug\net9.0\ref\ProgPOE.dll
+C:\Users\Bradz1\source\repos\ProgPOE\ProgPOE\obj\Debug\net9.0\ProgPOE.sourcelink.json

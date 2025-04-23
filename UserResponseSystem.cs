@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace ProgPOE
@@ -53,8 +54,21 @@ namespace ProgPOE
 
             String UserInput;
 
-            Console.WriteLine($"\nhi i am a cyber security bot\nyou may ask me questions based on my knowledge or type \"exit\" to quit\n" +
-                $"if you type \"key\" then information regarding data will be displayed\n");
+            Console.Write($"\nI am a cyber security bot\nyou may ask me questions based on my knowledge or type ");
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Write("\"exit\"");
+            Console.ResetColor();
+
+            Console.Write("to quit\nif you type ");
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Write("\"key\"");
+            Console.ResetColor();
+
+            Console.Write(" then information regarding data will be displayed\n");
+
+
             Console.ForegroundColor = ConsoleColor.Green;
             UserInput = Console.ReadLine();
             Console.ResetColor();
@@ -76,7 +90,7 @@ namespace ProgPOE
                 }
                 else
                 {
-                    Console.WriteLine("\nBot: I do not understand that question. plese refer to the key\n");
+                    Console.WriteLine("\nBot: I do not understand that question. plese refer to the key or check spelling\n");
                 }
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write($"{name}: ");    

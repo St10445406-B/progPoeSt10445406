@@ -6,14 +6,11 @@
         {
             LooknFeel lnf = new LooknFeel();
             UserResponseSystem response = new UserResponseSystem();
-            
-            
-            
-            lnf.Audio();
+
+
             lnf.logo();
-            
-            
-            
+            lnf.Audio();
+                        
             response.ResponseSystem();
             
             Console.WriteLine("Thank you for using the program");
